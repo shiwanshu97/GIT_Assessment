@@ -69,5 +69,10 @@ def about():
 def health():
     return "Application is running successfully"
 
+# Contact page route
+@app.route('/contact')
+def contact():
+    return "Contact us at support@studentapp.com"
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True, port=5001)
