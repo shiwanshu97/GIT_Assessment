@@ -74,15 +74,5 @@ def health():
 def contact():
     return "Contact us at support@studentapp.com"
 
-# Version route
-@app.route('/version')
-def version():
-    return "Application Version 1.0"
-
-# Version route (intentionally incorrect)
-@app.route('/version')
-def version()
-    return "Application Version 1.0"
-
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True, port=5001)
