@@ -64,5 +64,10 @@ def delete_student(student_id):
 def about():
     return "Student Management System using Flask and MongoDB"
 
+# Health check route
+@app.route('/health')
+def health():
+    return "Application is running successfully"
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True, port=5001)
